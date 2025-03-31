@@ -1,0 +1,71 @@
+{
+  "name": "movies-project",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://gazievri.github.io/movies-react/",
+  "dependencies": {
+    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
+    "@tailwindcss/vite": "^4.0.17",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.8.4",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^11.9.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "firebase": "^11.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.0",
+    "mysql2": "^3.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.4.1",
+    "react-scripts": "5.0.1",
+    "sqlite3": "^5.1.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "concurrently \"react-scripts start\" \"node src/server/server.js\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.6.3",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.17"
+  },
+  "description": "Проект **YOUR MOVIES** является поисковым ресурсом по базе данных фильмов и сериалов. Выполнен с использованием классовых компонентов React в рамках прохождения авторского образовательного курса Михаила Непомнящего [React для начинающих с нуля](https://www.udemy.com/course/react-from-scratch/).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,44 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/auth-context",
+        "destination": "/auth-context.js"
+      },
+      {
+        "source": "/login",
+        "destination": "/loginpage.js"
+      },
+      {
+        "source": "/profile",
+        "destination": "/profilepage.js"
+      },
+      {
+        "source": "/movie/:id",
+        "destination": "/movie.jsx"
+      },
+      {
+        "source": "/movies",
+        "destination": "/movies.jsx"
+      },
+      {
+        "source": "/main",
+        "destination": "/main.jsx"
+      },
+      {
+        "source": "/app",
+        "destination": "/app.js"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
